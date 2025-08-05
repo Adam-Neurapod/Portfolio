@@ -3,7 +3,8 @@ Vitaj v mojom osobnom portfóliu, kde dokumentujem svoju cestu vývojára a AI n
 ---
 ## **Zručnosti**
 ### Umelá inteligencia & strojové učenie- Práca s veľkými jazykovými modelmi (GPT-3.5 / GPT-4)- Tvorba vlastných neurónových sietí (FNN, MLP)- Základy architektúry AI modelov – od návrhu po implementáciu- Práca s TensorFlow / Keras (základy)- Práca s dátami, normalizácia vstupov, trénovanie a interpretácia výstupov
-### Programovanie a skriptovanie- Jazyk: Python (OOP, práca s dátami, GUI, regulárne výrazy)- Tvorba vlastných nástrojov, pomocných modulov a jednoduchých aplikácií- Tvorba chatbotov s logikou, dialógovým stromom a regex filtráciou
+### Programovanie a skriptovanie- Jazyk: Python (OOP, práca s dátami, GUI, regulárne výrazy)- Tvorba vlastných nástrojov, pomocných modulov a jednoduchých aplikácií- Tvorba chatbotov s logikou, dialógovým stromom a regex filtráciou. Som na úrovni junior Python developera, pričom sa venujem najmä vývoju malých aplikácií, AI modelov a jednoduchých nástrojov. Využívam Python na praktické projekty, ktoré mi pomáhajú zlepšovať logické myslenie, algoritmizáciu a porozumenie backendovým procesom. Neustále sa vzdelávam – postupne prechádzam aj na pokročilejšie koncepty, pričom všetko sa snažím pochopiť do hĺbky.
+
 ### Vizualizácie a dizajn- Tvorba 2D a 3D digitálnych avatarov- Práca s Blenderom (modelovanie, textúry, koncepty)- Prepojenie vizuálnych prvkov s AI a interaktívnymi aplikáciami
 ### Ostatné technológie- Git & GitHub – verzovanie, dokumentácia, práca s repozitárom- Visual Studio Code a Pydroid 3- Základy Linuxu (prostredie, príkazový riadok)- Tvorba GUI aplikácií (Kivy)- Kyberbezpečnosť (hashovanie, šifrovanie, základná ochrana dát)
 ---
