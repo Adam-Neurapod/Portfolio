@@ -1,22 +1,71 @@
-# Vývojové portfólio
-Vitaj v mojom osobnom portfóliu, kde dokumentujem svoju cestu vývojára a AI nadšenca. Projekty, ktoré tu nájdeš, vznikli ako súčasť učenia, zvedavosti a túžby budovať užitočné veci – od prvých modelov až po praktické využitie umelej inteligencie v rôznych oblastiach. Portfólio neustále rozširujem.
----
-## **Zručnosti**
-### Umelá inteligencia & strojové učenie- Práca s veľkými jazykovými modelmi (GPT-3.5 / GPT-4)- Tvorba vlastných neurónových sietí (FNN, MLP)- Základy architektúry AI modelov – od návrhu po implementáciu- Práca s TensorFlow / Keras (základy)- Práca s dátami, normalizácia vstupov, trénovanie a interpretácia výstupov
-### Programovanie a skriptovanie- Jazyk: Python (OOP, práca s dátami, GUI, regulárne výrazy)- Tvorba vlastných nástrojov, pomocných modulov a jednoduchých aplikácií- Tvorba chatbotov s logikou, dialógovým stromom a regex filtráciou. Som na úrovni junior Python developera, pričom sa venujem najmä vývoju malých aplikácií, AI modelov a jednoduchých nástrojov. Využívam Python na praktické projekty, ktoré mi pomáhajú zlepšovať logické myslenie, algoritmizáciu a porozumenie backendovým procesom. Neustále sa vzdelávam – postupne prechádzam aj na pokročilejšie koncepty, pričom všetko sa snažím pochopiť do hĺbky.
+Umelá inteligencia & neurónové siete
 
-### Vizualizácie a dizajn- Tvorba 2D a 3D digitálnych avatarov- Práca s Blenderom (modelovanie, textúry, koncepty)- Prepojenie vizuálnych prvkov s AI a interaktívnymi aplikáciami
-### Ostatné technológie- Git & GitHub – verzovanie, dokumentácia, práca s repozitárom- Visual Studio Code a Pydroid 3- Základy Linuxu (prostredie, príkazový riadok)- Tvorba GUI aplikácií (Kivy)- Kyberbezpečnosť (hashovanie, šifrovanie, základná ochrana dát)
----
-## Projekty
-### Calm-a (AI pre duševnú pohodu)AI projekt zameraný na predikciu psychickej pohody používateľa na základe vstupných parametrov ako stres, nálada, spánok, energia a ďalšie faktory.   Vlastná neurónová sieť vytvorená v Pythone s použitím Keras/TensorFlow.   Dôraz na trénovanie, optimalizáciu, interpretáciu výstupov.   Plán: prepojenie s vlastným GUI vytvoreným pomocou Kivy, offline aplikácia.
----
-### CyberQuest (AI adventúra)Textová adventúra v štýle cyberpunku s vlastnou logikou, parserom vstupov a dynamickým scenárom.   Použitie regulárnych výrazov na analýzu vstupu hráča   Vytváranie rozhodovacích vetiev a príprava na prepojenie s pokročilejším NLP   Atmosférický svet a interakcia s hernou AI
----
-### Digitálni avatari (2D / 3D)Vývoj interaktívnych digitálnych avatarov – zameranie na technickú aj vizuálnu stránku.   Blender modely + AI správanie (budúce prepojenie)   Vlastná tvorba postáv: realistických aj štýlových (cyberpunk, sci-fi, minimalistický štýl)   Cieľ: Využitie pre firmy, hotely, aplikácie, ako digitálni sprievodcovia alebo asistenti
----
-### Vývoj a testovanie AI modelovSamostatné moduly zamerané na trénovanie jednoduchých AI modelov v Pythone.   Precvičovanie architektúr (napr. FNN/MLP) a dátových operácií   Testovanie rôznych vstupných formátov, funkcií a výstupov   Cieľ: budovať si pevný základ pre tvorbu vlastných komplexnejších modelov v budúcnosti
----
-## Ciele a smerovanie
-Mojím cieľom je porozumieť umelej inteligencii nielen ako nástroju, ale ako celému systému – od návrhu modelu až po jeho implementáciu a použitie. Chcem postupne prejsť od základných neurónových sietí k pokročilejším architektúram, ktoré si budem schopný vytvárať a optimalizovať sám.
-Zároveň ma zaujíma prepojenie AI so svetom aplikácií, digitálnych asistentov, vizuálnych rozhraní a reálnych potrieb – tvorím veci, ktoré majú nápad, atmosféru a praktické využitie.
+Práca s veľkými jazykovými modelmi (ChatGPT, GPT-3.5, GPT-4) – návrhy, testovanie, zapojenie do projektov
+
+Tvorba vlastných jednoduchých neurónových sietí (napr. FNN, MLP) v Pythone
+
+
+Základy spracovania vstupných dát: normalizácia, rozdelenie na tréningové/testovacie dáta
+
+Vyhodnocovanie výstupov modelu (logika rozhodovania, analýza úspešnosti)
+
+Vizuálne zakreslenie architektúry siete, pre lepšie pochopenie jej fungovania a prepočet neurónovej siete
+
+Učenie základných konceptov AI: neuróny, vrstvy, aktivácie, spätná väzba (backpropagation)
+
+Prepojenie AI modelov s GUI aplikáciami (napr. Calm-a, predikcia psychického stavu)
+
+Neustále rozširujem svoje znalosti – cieľom je časom vytvoriť vlastné funkčné a použiteľné modely na mieru
+
+
+
+Programovanie a skriptovanie (Python)
+
+Práca s premennými, dátovými typmi (reťazce, čísla, zoznamy, slovníky)
+
+Ovládanie základnej programovej logiky: if, elif, else, while, for, break, continue
+
+Tvorba a volanie vlastných funkcií
+
+Základy práce so súbormi (čítanie, zápis, spracovanie textu)
+
+Použitie regulárnych výrazov (regex) na filtrovanie a spracovanie vstupov
+
+Základná validácia vstupov a vytváranie dialógových stromov
+
+Tvorba jednoduchých projektov: prihlasovací systém, chatboty, textové hry
+
+Využitie balíčkov ako re, random, json, time, os
+
+Práca v prostredí: Pydroid 3 (mobil), VS Code (notebook)
+
+Neustále sa vzdelávam, všetko si zapisujem a opakujem, aby som vedel riešiť problémy samostatne.
+
+Digitálne avatary (2D / 3D + AI prepojenie)
+
+Zameranie na tvorbu realistických 3D avatarov s prepojením na AI
+
+Práca v Blenderi – modelovanie, úprava, technické koncepty
+
+Skúsenosti so skenovaním pomocou mobilných 3D nástrojov (Kiri Engine, RealityScan)
+
+Tvorba základných MetaHuman modelov a zoznamovanie sa s Unreal Engine
+
+Postupné budovanie 2D verzií avatarov – kreslené koncepty, vývoj identity
+
+Cieľ: vytvárať AI-assistovaných avatarov pre reálne použitie (digitálni sprievodcovia, asistenti, NPC pre aplikácie)
+
+Súčasťou portfólia budú aj štýlové sci-fi a cyberpunk verzie avatarov s unikátnym vizuálom
+
+Dôraz na kombináciu technického základu a umeleckého prevedenia.
+
+
+Ciele a smerovanie
+
+🎯 Profesijný cieľ
+
+Momentálne sa zameriavam na junior pozície v oblasti Python developmentu a umelej inteligencie. Mojím cieľom je získať skúsenosti v tíme, ktorý mi umožní ďalej rásť, učiť sa v praxi, zlepšovať sa v oblasti neurónových sietí a vývoja AI riešení.
+
+🌱 Osobné smerovanie
+
+Popri práci budujem vlastné AI projekty a experimentujem s neurónovými sieťami, digitálnymi avatarmi a prepojením AI s aplikáciami pre reálny svet. Chcem porozumieť umelej inteligencii od základov až po tvorbu vlastných architektúr a nástrojov – učiť sa krok za krokom, budovať stabilný základ a zároveň tvoriť nápadité veci s atmosférou a praktickým využitím.
