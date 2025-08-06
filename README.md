@@ -1,3 +1,5 @@
+Vývojové portfólio.
+
 Umelá inteligencia & neurónové siete
 
 Práca s veľkými jazykovými modelmi (ChatGPT, GPT-3.5, GPT-4) – návrhy, testovanie, zapojenie do projektov
