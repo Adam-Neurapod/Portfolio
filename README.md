@@ -1,6 +1,6 @@
 Vývojové portfólio.
 
-Umelá inteligencia & neurónové siete
+🧠 Umelá inteligencia & neurónové siete
 
 Práca s veľkými jazykovými modelmi (ChatGPT, GPT-3.5, GPT-4) – návrhy, testovanie, zapojenie do projektov
 
@@ -21,7 +21,7 @@ Neustále rozširujem svoje znalosti – cieľom je časom vytvoriť vlastné fu
 
 
 
-Programovanie a skriptovanie (Python)
+💻 Programovanie a skriptovanie (Python)
 
 Práca s premennými, dátovými typmi (reťazce, čísla, zoznamy, slovníky)
 
@@ -39,11 +39,11 @@ Tvorba jednoduchých projektov: prihlasovací systém, chatboty, textové hry
 
 Využitie balíčkov ako re, random, json, time, os
 
-Práca v prostredí: Pydroid 3 (mobil), VS Code (notebook)
+Práca v prostredí: VS Code
 
 Neustále sa vzdelávam, všetko si zapisujem a opakujem, aby som vedel riešiť problémy samostatne.
 
-Digitálne avatary (2D / 3D + AI prepojenie)
+🧔‍♂️ Digitálne avatary (2D / 3D + AI prepojenie)
 
 Zameranie na tvorbu realistických 3D avatarov s prepojením na AI
 
