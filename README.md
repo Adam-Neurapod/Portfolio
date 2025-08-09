@@ -41,7 +41,6 @@ Využitie balíčkov ako re, random, json, time, os
 
 Práca v prostredí: VS Code
 
-Neustále sa vzdelávam, všetko si zapisujem a opakujem, aby som vedel riešiť problémy samostatne.
 
 🧔‍♂️ Digitálne avatary (2D / 3D + AI prepojenie)
 
