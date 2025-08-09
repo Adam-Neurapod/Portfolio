@@ -2,7 +2,7 @@ Vývojové portfólio.
 
 🧠 Umelá inteligencia & neurónové siete
 
-Práca s veľkými jazykovými modelmi (ChatGPT, GPT-3.5, GPT-4) – návrhy, testovanie, zapojenie do projektov
+Práca s veľkými jazykovými modelmi (ChatGPT, GPT-3.5, GPT-4, GPT-5) – návrhy, testovanie, zapojenie do projektov
 
 Tvorba vlastných jednoduchých neurónových sietí (napr. FNN, MLP) v Pythone
 
