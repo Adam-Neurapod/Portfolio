@@ -1,72 +1,96 @@
-Vývojové portfólio.
+🧑‍💻 O mne
 
-🧠 Umelá inteligencia & neurónové siete
-
-Práca s veľkými jazykovými modelmi (ChatGPT, GPT-3.5, GPT-4, GPT-5) – návrhy, testovanie, zapojenie do projektov
-
-Tvorba vlastných jednoduchých neurónových sietí (napr. FNN, MLP) v Pythone
+Som junior Python developer so záujmom o AI a kyberbezpečnosť.
+Učím sa systematicky a pracujem na vlastných projektoch, ktoré prepájajú programovanie, umelú inteligenciu a digitálnych avatarov. Mojím cieľom je prejsť z učenia do praxe – do firmy, kde budem môcť rásť a priniesť svoje nápady.
 
 
-Základy spracovania vstupných dát: normalizácia, rozdelenie na tréningové/testovacie dáta
+---
 
-Vyhodnocovanie výstupov modelu (logika rozhodovania, analýza úspešnosti)
+🛠️ Zručnosti
 
-Vizuálne zakreslenie architektúry siete, pre lepšie pochopenie jej fungovania a prepočet neurónovej siete
+Programovanie – Python 🐍
 
-Učenie základných konceptov AI: neuróny, vrstvy, aktivácie, spätná väzba (backpropagation)
+Podmienky (if, elif, else), cykly (for, while)
 
-Prepojenie AI modelov s GUI aplikáciami (napr. Calm-a, predikcia psychického stavu)
+Práca s knižnicami (random, json, re)
 
-Neustále rozširujem svoje znalosti – cieľom je časom vytvoriť vlastné funkčné a použiteľné modely na mieru
+Regulárne výrazy (regex) na spracovanie textu
 
+Vytváranie funkcií a základné OOP koncepty
 
-
-💻 Programovanie a skriptovanie (Python)
-
-Práca s premennými, dátovými typmi (reťazce, čísla, zoznamy, slovníky)
-
-Ovládanie základnej programovej logiky: if, elif, else, while, for, break, continue
-
-Tvorba a volanie vlastných funkcií
-
-Základy práce so súbormi (čítanie, zápis, spracovanie textu)
-
-Použitie regulárnych výrazov (regex) na filtrovanie a spracovanie vstupov
-
-Základná validácia vstupov a vytváranie dialógových stromov
-
-Tvorba jednoduchých projektov: prihlasovací systém, chatboty, textové hry
-
-Využitie balíčkov ako re, random, json, time, os
-
-Práca v prostredí: VS Code
+Základy práce so súbormi (open, čítanie/zápis)
 
 
-🧔‍♂️ Digitálne avatary (2D / 3D + AI prepojenie)
+Git & GitHub 💻
 
-Zameranie na tvorbu realistických 3D avatarov s prepojením na AI
+Inicializácia repozitára, commitovanie, branching
 
-Práca v Blenderi – modelovanie, úprava, technické koncepty
+Push/pull do vzdialeného repozitára
 
-Skúsenosti so skenovaním pomocou mobilných 3D nástrojov (Kiri Engine, RealityScan)
-
-Tvorba základných MetaHuman modelov a zoznamovanie sa s Unreal Engine
-
-Postupné budovanie 2D verzií avatarov – kreslené koncepty, vývoj identity
-
-Cieľ: vytvárať AI-assistovaných avatarov pre reálne použitie (digitálni sprievodcovia, asistenti, NPC pre aplikácie)
-
-Súčasťou portfólia budú aj štýlové sci-fi a cyberpunk verzie avatarov s unikátnym vizuálom
-
-Dôraz na kombináciu technického základu a umeleckého prevedenia.
+Práca s README a dokumentáciou
 
 
-Ciele a smerovanie
+AI & neurónové siete 🧠
 
-🎯 Profesijný cieľ
+Praktická práca s GPT modelmi (ChatGPT API)
 
-Momentálne sa zameriavam na junior pozície v oblasti Python developmentu a umelej inteligencie. Mojím cieľom je získať skúsenosti v tíme, ktorý mi umožní ďalej rásť, učiť sa v praxi, zlepšovať sa v oblasti neurónových sietí a vývoja AI riešení.
+Základy TensorFlow/Keras: tvorba a trénovanie jednoduchých modelov
 
-🌱 Osobné smerovanie
+Prvé experimenty s NLP (textové dáta, chatboty)
 
-Popri práci budujem vlastné AI projekty a experimentujem s neurónovými sieťami, digitálnymi avatarmi a prepojením AI s aplikáciami pre reálny svet. Chcem porozumieť umelej inteligencii od základov až po tvorbu vlastných architektúr a nástrojov – učiť sa krok za krokom, budovať stabilný základ a zároveň tvoriť nápadité veci s atmosférou a praktickým využitím.
+
+Aplikácie a UI 📱
+
+Kivy – tvorba jednoduchých mobilných aplikácií (projekt Calma)
+
+Základy práce s GUI a event-driven programovaním
+
+
+Digitálna tvorba 🎨
+
+Blender – 3D modelovanie a dizajn avatarov
+
+Unreal Engine (MetaHuman) – skúšanie realistických digitálnych postáv
+
+2D koncepty a animácie (sketch → digitalizácia → jednoduchá animácia)
+
+
+
+---
+
+🚀 Projekty
+
+🔮 CyberQuest
+Textová adventúra v cyberpunk štýle. Používa regex na spracovanie vstupov hráča a mapový systém v JSON.
+→ Tréning logiky, regexu a štruktúry kódu.
+
+🏙️ Stonemill
+Fiktívne mesto s jednoduchým chatbotom.
+→ Využitie if/elif, neskôr regex pre flexibilnejšie odpovede.
+
+🌱 Calma
+Mobilná aplikácia postavená na Kivy. Offline sprievodca duševným pokojom.
+→ Práca s layoutmi, eventami a užívateľským rozhraním.
+
+👤 Digitálni avatari
+Experimenty v Blenderi (sci-fi a realistické verzie), prepojené s možnosťou napojenia na AI backend.
+→ Prezentácia kombinácie technológie + dizajnu.
+
+🔑 Login System
+Jednoduchý prihlasovací systém (Python), neskôr rozšírený o simulácie útokov (brute force, keylogger, phishing).
+→ Prepojenie programovania s kyberbezpečnostnou praxou.
+
+
+
+---
+
+🎯 Ciele a smerovanie
+
+Stať sa junior developerom so zameraním na AI / kyberbezpečnosť
+
+Pracovať s reálnymi dátami a modelmi
+
+Budovať projekty, ktoré kombinujú technológie + kreativitu
+
+Získať skúsenosti v tíme a postupne sa prepracovať k vlastným AI riešeniam
+
