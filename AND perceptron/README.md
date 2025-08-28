@@ -1,1 +1,26 @@
+# AND Perceptron – Mini Demo
 
+Jednoduchý projekt neurónovej siete: perceptron, ktorý sa učí logickú funkciu **AND**.  
+Cieľom je ukázať základné princípy – váhy, bias, učenie podľa chyby.
+
+## Dataset
+- (0,0) → 0  
+- (0,1) → 0  
+- (1,0) → 0  
+- (1,1) → 1  
+
+## Spustenie
+```bash
+python AND_Neuron.py
+
+Výstup (príklad)
+
+Vstup: [0 0] -> Predikcia: 0
+Vstup: [0 1] -> Predikcia: 0
+Vstup: [1 0] -> Predikcia: 0
+Vstup: [1 1] -> Predikcia: 1
+
+
+---
+
+➡️ Tento mini projekt je prvý krok k väčším neurónovým sieťam (MLP a ďalšie).
