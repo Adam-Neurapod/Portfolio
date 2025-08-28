@@ -68,7 +68,7 @@ Textová adventúra v cyberpunk štýle. Používa regex na spracovanie vstupov 
 🏙️ Stonemill
 Fiktívne mesto s jednoduchým chatbotom.
 → Využitie if/elif, neskôr regex pre flexibilnejšie odpovede.
--> 
+-> https://github.com/Adam-Neurapod/Portfolio/blob/main/Stonemmil%20bot%20%20program.py
 
 🌱 Calma
 Mobilná aplikácia postavená na Kivy. Offline sprievodca duševným pokojom.
@@ -81,6 +81,7 @@ Experimenty v Blenderi (sci-fi a realistické verzie), prepojené s možnosťou 
 🔑 Login System
 Jednoduchý prihlasovací systém (Python), neskôr rozšírený o simulácie útokov (brute force, keylogger, phishing).
 → Prepojenie programovania s kyberbezpečnostnou praxou.
+-> https://github.com/Adam-Neurapod/Portfolio/tree/main/login-system
 
 
 
