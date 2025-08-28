@@ -63,10 +63,12 @@ Unreal Engine (MetaHuman) – skúšanie realistických digitálnych postáv
 🔮 CyberQuest
 Textová adventúra v cyberpunk štýle. Používa regex na spracovanie vstupov hráča a mapový systém v JSON.
 → Tréning logiky, regexu a štruktúry kódu.
+-> https://github.com/Adam-Neurapod/Portfolio/blob/main/CYBERQUEST%20v1.0%20Final.py
 
 🏙️ Stonemill
 Fiktívne mesto s jednoduchým chatbotom.
 → Využitie if/elif, neskôr regex pre flexibilnejšie odpovede.
+-> 
 
 🌱 Calma
 Mobilná aplikácia postavená na Kivy. Offline sprievodca duševným pokojom.
