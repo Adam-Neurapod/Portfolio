@@ -38,6 +38,27 @@ Základy TensorFlow/Keras: tvorba a trénovanie jednoduchých modelov
 
 Prvé experimenty s NLP (textové dáta, chatboty)
 
+🧠 AI– Teoretické znalosti
+
+Popri praktických projektoch sa venujem aj teórii, aby som rozumel princípom AI 👨‍💻
+
+🔗 Perceptron & logické brány (AND, OR, XOR): základy váh, biasu a aktivačných funkcií.
+
+🏗️ MLP (Multi-Layer Perceptron): vrstvenie, spätná propagácia a učenie siete.
+
+⚡ Aktivačné funkcie: rozdiely medzi sigmoid, ReLU, tanh.
+
+🔎 Architektúry, v ktorých sa orientujem:
+
+🧩 MLP: klasifikácia, predikcie.
+
+🖼️ CNN: spracovanie obrazu.
+
+⏳ RNN, LSTM/GRU: sekvenčné dáta, texty, časové rady.
+
+🚀 Transformers: moderné jazykové modely (GPT, BERT).
+
+🎨 GANs & Autoencoders: generovanie obsahu, redukcia šumu a dát.
 
 Aplikácie a UI 📱
 
