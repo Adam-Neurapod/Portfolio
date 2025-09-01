@@ -1,31 +1,47 @@
-# 🔐 Mini Login System (Python)
+ 🔐 Mini Login System (Python)
 
-Tento projekt je učebný príklad jednoduchého prihlasovacieho systému v Pythone.  
-Používa ukladanie používateľov do JSON súboru, hashovanie hesiel so saltom a kontrolu prihlásenia.
+This project is a learning example of a simple login system in Python.
+It uses JSON file storage for users, password hashing with salt, and login validation.
 
----
-
-## ✨ Funkcie
-- Registrácia nového používateľa
-- Ukladanie údajov do lokálnej JSON databázy
-- Hashovanie hesla so saltom (SHA-256)
-- Prihlasovanie s kontrolou
-- Ochrana proti brute-force (zablokovanie účtu po viacerých pokusoch)
 
 ---
 
-## 🧪 Testovací účet
-Repo obsahuje ukážkového používateľa:
+✨ Features
 
-- **Meno:** `Tester`  
-- **Heslo:** `Test123`
+Register a new user
 
-Tento účet je v `users.json` a môžeš ho použiť na okamžité vyskúšanie prihlasovania.
+Store data in a local JSON database
+
+Password hashing with salt (SHA-256)
+
+Login validation
+
+Brute-force protection (account lock after multiple failed attempts)
+
+
 
 ---
 
-## 🚀 Spustenie
-1. Uisti sa, že máš nainštalovaný **Python 3.10+**.
-2. Naklonuj repozitár:
-   ```bash
-   git clone https://github.com/<tvoje_repo>.git
+🧪 Test Account
+The repo includes a sample user:
+
+Username: Tester
+
+Password: Test123
+
+
+This account is stored in users.json and can be used to try out the login system immediately.
+
+
+---
+
+🚀 How to Run
+
+1. Make sure you have Python 3.10+ installed.
+
+
+2. Clone the repository:
+
+git clone https://github.com/<your_repo>.git
+
+
