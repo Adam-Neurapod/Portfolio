@@ -1,120 +1,108 @@
-🧑‍💻 O mne
+🧑‍💻 About Me
 
-Som junior Python developer so záujmom o AI a kyberbezpečnosť.
-Učím sa systematicky a pracujem na vlastných projektoch, ktoré prepájajú programovanie, umelú inteligenciu a digitálnych avatarov. Mojím cieľom je prejsť z učenia do praxe – do firmy, kde budem môcť rásť a priniesť svoje nápady.
+I’m a junior Python developer with a strong interest in AI. I learn systematically and build my own projects that connect programming, artificial intelligence, and digital avatars.
+My goal is to move from learning into practice — into a company where I can grow, contribute my ideas, and bring creativity into technology.
+I’m quick to learn new concepts, motivated to improve, and enjoy combining logical problem-solving with creative thinking.
 
 
 ---
 
-🛠️ Zručnosti
+🛠️ Skills
 
-Programovanie – Python 🐍
+Programming – Python 🐍
 
-Podmienky (if, elif, else), cykly (for, while)
+Conditions (if, elif, else), loops (for, while)
 
-Práca s knižnicami (random, json, re)
+Working with libraries (random, json, re)
 
-Regulárne výrazy (regex) na spracovanie textu
+Regular expressions (regex) for text processing
 
-Vytváranie funkcií a základné OOP koncepty
+Functions and basic OOP concepts
 
-Základy práce so súbormi (open, čítanie/zápis)
+File handling (open, read/write)
 
 
 Git & GitHub 💻
 
-Inicializácia repozitára, commitovanie, branching
+Repository initialization, committing, branching
 
-Push/pull do vzdialeného repozitára
+Push/pull to remote repositories
 
-Práca s README a dokumentáciou
-
-
-AI & neurónové siete 🧠
-
-Praktická práca s GPT modelmi (ChatGPT API)
-
-Základy TensorFlow/Keras: tvorba a trénovanie jednoduchých modelov
-
-Prvé experimenty s NLP (textové dáta, chatboty)
-
-🧠 AI– Teoretické znalosti
-
-Popri praktických projektoch sa venujem aj teórii, aby som rozumel princípom AI 👨‍💻
-
-🔗 Perceptron & logické brány (AND, OR, XOR): základy váh, biasu a aktivačných funkcií.
-
-🏗️ MLP (Multi-Layer Perceptron): vrstvenie, spätná propagácia a učenie siete.
-
-⚡ Aktivačné funkcie: rozdiely medzi sigmoid, ReLU, tanh.
-
-🔎 Architektúry, v ktorých sa orientujem:
-
-🧩 MLP: klasifikácia, predikcie.
-
-🖼️ CNN: spracovanie obrazu.
-
-⏳ RNN, LSTM/GRU: sekvenčné dáta, texty, časové rady.
-
-🚀 Transformers: moderné jazykové modely (GPT, BERT).
-
-🎨 GANs & Autoencoders: generovanie obsahu, redukcia šumu a dát.
-
-Aplikácie a UI 📱
-
-Kivy – tvorba jednoduchých mobilných aplikácií (projekt Calma)
-
-Základy práce s GUI a event-driven programovaním
+Working with README and documentation
 
 
-Digitálna tvorba 🎨
+AI & Neural Networks 🧠
 
-Blender – 3D modelovanie a dizajn avatarov
+Practical work with GPT models (ChatGPT API)
 
-Unreal Engine (MetaHuman) – skúšanie realistických digitálnych postáv
+Basics of TensorFlow/Keras: creating & training simple models
 
-2D koncepty a animácie (sketch → digitalizácia → jednoduchá animácia)
+First experiments with NLP (text data, chatbots)
+
+
+AI – Theoretical Knowledge 📚
+Besides practice, I study theory to understand AI principles:
+
+Perceptron & logic gates (AND, OR, XOR): basics of weights, bias, and activation functions
+
+Multi-Layer Perceptron (MLP): layers, backpropagation, learning
+
+Activation functions: sigmoid, ReLU, tanh
+
+Architectures I understand:
+
+MLP: classification, predictions
+
+CNN: image processing
+
+RNN, LSTM/GRU: sequential data, text, time series
+
+Transformers: modern language models (GPT, BERT)
+
+GANs & Autoencoders: content generation, denoising, data reduction
 
 
 
----
+Applications & UI 📱
 
-🚀 Projekty
+Kivy – building simple mobile apps (Calma project)
 
-🔮 CyberQuest
-Textová adventúra v cyberpunk štýle. Používa regex na spracovanie vstupov hráča a mapový systém v JSON.
-→ Tréning logiky, regexu a štruktúry kódu.
--> https://github.com/Adam-Neurapod/Portfolio/blob/main/CYBERQUEST%20v1.0%20Final.py
-
-🏙️ Stonemill
-Fiktívne mesto s jednoduchým chatbotom.
-→ Využitie if/elif, neskôr regex pre flexibilnejšie odpovede.
--> https://github.com/Adam-Neurapod/Portfolio/blob/main/Stonemmil%20bot%20%20program.py
-
-🌱 Calma
-Mobilná aplikácia postavená na Kivy. Offline sprievodca duševným pokojom.
-→ Práca s layoutmi, eventami a užívateľským rozhraním.
-
-👤 Digitálni avatari
-Experimenty v Blenderi (sci-fi a realistické verzie), prepojené s možnosťou napojenia na AI backend.
-→ Prezentácia kombinácie technológie + dizajnu.
-
-🔑 Login System
-Jednoduchý prihlasovací systém (Python), neskôr rozšírený o simulácie útokov (brute force, keylogger, phishing).
-→ Prepojenie programovania s kyberbezpečnostnou praxou.
--> https://github.com/Adam-Neurapod/Portfolio/tree/main/login-system
+Basics of GUI and event-driven programming
 
 
+Digital Creation 🎨
+
+Blender – 3D modeling and avatar design
+
+Unreal Engine (MetaHuman) – experimenting with realistic digital characters
+
+2D concepts & simple animations
 
 ---
 
-🎯 Ciele a smerovanie
+🚀 Projects
 
-Stať sa junior developerom so zameraním na AI / kyberbezpečnosť
+🔮 CyberQuest – Text adventure in a cyberpunk style. Uses regex for player input and JSON map system. → Training logic, regex, and code structure.
+CyberQuest v1.0
 
-Pracovať s reálnymi dátami a modelmi
+🏙️ Stonemill – Fictional city chatbot. → Started with if/elif, later regex for more flexible responses.
+Stonemill Bot
 
-Budovať projekty, ktoré kombinujú technológie + kreativitu
+🌱 Calma – Mobile app built with Kivy. Offline mental-wellbeing guide. → Working with layouts, events, and UI.
 
-Získať skúsenosti v tíme a postupne sa prepracovať k vlastným AI riešeniam
+👤 Digital Avatars – Experiments in Blender (sci-fi and realistic versions), linked with AI backend. → Combining technology + design.
 
+🔑 Login System – Simple Python login, later extended with attack simulations (brute force, keylogger, phishing). → Bridging programming with cybersecurity practice.
+Login System
+
+
+---
+🎯 Goals & Direction
+
+Become a junior developer focused on AI / cybersecurity
+Work with real-world data and models
+Build projects that connect technology + creativity
+Gain team experience and gradually contribute to AI solutions with my own ideas
+---
+
+👉 For more details about my projects and theoretical knowledge of AI, check my Portfolio on GitHub.
