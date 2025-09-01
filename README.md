@@ -87,20 +87,22 @@ CyberQuest v1.0
 - https://github.com/Adam-Neurapod/Portfolio/blob/main/CYBERQUEST%20v1.0%20Final.py
 
 🏙️ Stonemill – Fictional city chatbot. → Started with if/elif, later regex for more flexible responses.
-Stonemill Bot - https://github.com/Adam-Neurapod/Portfolio/blob/main/Stonemmil%20bot%20%20program.py
+Stonemill Bot
+-https://github.com/Adam-Neurapod/Portfolio/blob/main/Stonemmil%20bot%20%20program.py
 
 🌱 Calma – Mobile app built with Kivy. Offline mental-wellbeing guide. → Working with layouts, events, and UI.
 
 👤 Digital Avatars – Experiments in Blender (sci-fi and realistic versions), linked with AI backend. → Combining technology + design.
 
 🔑 Login System – Simple Python login, later extended with attack simulations (brute force, keylogger, phishing). → Bridging programming with cybersecurity practice.
-Login System - https://github.com/Adam-Neurapod/Portfolio/tree/main/login-system
+Login System
+-https://github.com/Adam-Neurapod/Portfolio/tree/main/login-system
 
 
 ---
 🎯 Goals & Direction
 
-Become a junior developer focused on AI / cybersecurity
+Become developer focused on AI
 Work with real-world data and models
 Build projects that connect technology + creativity
 Gain team experience and gradually contribute to AI solutions with my own ideas
