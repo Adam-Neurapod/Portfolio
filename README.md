@@ -1,111 +1,78 @@
 🧑‍💻 About Me
 
-I’m a junior Python developer with a strong interest in AI. I learn systematically and build my own projects that connect programming, artificial intelligence, and digital avatars.
-My goal is to move from learning into practice — into a company where I can grow, contribute my ideas, and bring creativity into technology.
-I’m quick to learn new concepts, motivated to improve, and enjoy combining logical problem-solving with creative thinking.
+I’m a junior Python developer with a strong focus on AI. I learn systematically and build my own projects that combine programming with real-world applications of artificial intelligence — from chatbots to neural networks. My goal is to join a team where I can grow, contribute my ideas, and help shape meaningful AI-driven tools. I’m motivated, curious, and enjoy solving problems by combining logic with creativity.
+
+🧰 Core Programming Skills
+
+Python – Conditions (if, elif, else), loops (for, while), functions, basic OOP concepts
+
+Libraries – random, json, re, math, os
+
+Regex – Advanced use of regular expressions for input processing and logic (used in multiple chatbot and game projects)
+
+File Handling – Reading/writing files, working with .json and .csv formats
+
+Git & GitHub – Version control, branching, commits, README/documentation, managing repositories
 
 
----
+🧠 AI & Neural Networks
 
-🛠️ Skills
+Chatbots & GPT API
 
-Programming – Python 🐍
+Working with OpenAI models (ChatGPT API) and integrating them into projects
 
-Conditions (if, elif, else), loops (for, while)
+Created NeuraBuddy: a chatbot using structured QnA logic with follow-ups and smart branching
 
-Working with libraries (random, json, re)
-
-Regular expressions (regex) for text processing
-
-Functions and basic OOP concepts
-
-File handling (open, read/write)
+Prompt engineering and building hybrid logic-AI bots
 
 
-Git & GitHub 💻
+CNN – Convolutional Neural Networks
 
-Repository initialization, committing, branching
+Project AuraFace: design of CNN for facial image classification
 
-Push/pull to remote repositories
+Created training pipeline, processed labeled data, implemented basic CNN architecture
 
-Working with README and documentation
-
-
-AI & Neural Networks 🧠
-
-Practical work with GPT models (ChatGPT API)
-
-Basics of TensorFlow/Keras: creating & training simple models
-
-First experiments with NLP (text data, chatbots)
+Experience with layers, filters, activation functions, softmax output
 
 
-AI – Theoretical Knowledge 📚
-Besides practice, I study theory to understand AI principles:
+MLP & Perceptron Logic
 
-Perceptron & logic gates (AND, OR, XOR): basics of weights, bias, and activation functions
+Training simple networks on logic gates (AND, OR, XOR)
 
-Multi-Layer Perceptron (MLP): layers, backpropagation, learning
-
-Activation functions: sigmoid, ReLU, tanh
-
-Architectures I understand:
-
-MLP: classification, predictions
-
-CNN: image processing
-
-RNN, LSTM/GRU: sequential data, text, time series
-
-Transformers: modern language models (GPT, BERT)
-
-GANs & Autoencoders: content generation, denoising, data reduction
+Understanding weights, bias, backpropagation and learning rate
 
 
+Theoretical Understanding
 
-Applications & UI 📱
+Architectures: MLP, CNN, RNN, LSTM/GRU, Transformers, GANs, Autoencoders
 
-Kivy – building simple mobile apps (Calma project)
+Activation functions: sigmoid, tanh, ReLU
 
-Basics of GUI and event-driven programming
+Use cases: classification, text generation, image recognition, anomaly detection
 
 
-Digital Creation 🎨
-
-Blender – 3D modeling and avatar design
-
-Unreal Engine (MetaHuman) – experimenting with realistic digital characters
-
-2D concepts & simple animations
-
----
 
 🚀 Projects
 
-🔮 CyberQuest – Text adventure in a cyberpunk style. Uses regex for player input and JSON map system. → Training logic, regex, and code structure.
-CyberQuest v1.0
-- https://github.com/Adam-Neurapod/Portfolio/blob/main/CYBERQUEST%20v1.0%20Final.py
+🔮 CyberQuest – Text-based cyberpunk adventure. Regex-powered player input and flexible game logic over JSON map system. 👉 CyberQuest v1.0
 
-🏙️ Stonemill – Fictional city chatbot. → Started with if/elif, later regex for more flexible responses.
-Stonemill Bot
--https://github.com/Adam-Neurapod/Portfolio/blob/main/Stonemmil%20bot%20%20program.py
+🏙️ Stonemill Bot – Fictional city chatbot. Started with if/elif, later refactored with regex. 👉 Stonemill Bot
 
-🌱 Calma – Mobile app built with Kivy. Offline mental-wellbeing guide. → Working with layouts, events, and UI.
+🤖 NeuraBuddy – Smart QnA chatbot with JSON knowledge base and follow-up branching. Backend in Python, frontend in JS. Designed for future integration with AI-generated answers.
 
-👤 Digital Avatars – Experiments in Blender (sci-fi and realistic versions), linked with AI backend. → Combining technology + design.
+🧠 AuraFace – CNN-powered avatar system prototype. Designed for facial image training and recognition. Currently in development stage, used for learning CNN logic and model structuring.
 
-🔑 Login System – Simple Python login, later extended with attack simulations (brute force, keylogger, phishing). → Bridging programming with cybersecurity practice.
-Login System
--https://github.com/Adam-Neurapod/Portfolio/tree/main/login-system
+🔐 Login System – Secure login system with features simulating attack vectors (brute force, phishing, keylogger). Used for practice in cybersecurity and Python file operations. 👉 Login System
 
-
----
 🎯 Goals & Direction
 
-Become developer focused on AI
-Work with real-world data and models
-Build projects that connect technology + creativity
-Gain team experience and gradually contribute to AI solutions with my own ideas
----
+Become a developer focused on practical AI applications
 
-👉 For more details about my projects and theoretical knowledge of AI, check my Portfolio on GitHub.
+Build tools that combine logic with creativity
+
+Gain experience with real-world data and teamwork
+
+Grow into roles where I contribute ideas to AI solutions
+
+
+👉 For full technical details and updates, visit my GitHub Portfolio
