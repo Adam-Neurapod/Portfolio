@@ -1,0 +1,101 @@
+import os
+from mcp.server.fastmcp import FastMCP
+from langsmith import Client
+
+api_key = "API KEY HERE"
+mcp = FastMCP("langsmith-assistant")
+ls_client = Client(api_key=api_key)
+
+@mcp.tool()
+def list_projects() -> str:
+    """List all LangSmith projects in your workspace."""
+    projects = ls_client.list_projects()
+    result = []
+    for p in projects:
+        result.append(f"- {p.name} (id: {p.id})")
+    return "\n".join(result) if result else "No projects found."
+
+@mcp.tool()
+def get_runs(project_name: str, limit: int = 10) -> str:
+    """Get recent runs from a LangSmith project.
+    
+    Args:
+        project_name: Name of the project to fetch runs from.
+        limit: Number of runs to return (default 10).
+    """
+    runs = ls_client.list_runs(project_name=project_name, limit=limit)
+    result = []
+    for r in runs:
+        status = "OK" if r.status == "success" else "NOK"
+        result.append(f"{status} [{r.run_type}] {r.name} - {r.start_time}")
+    return "\n".join(result) if result else "No runs found."
+
+@mcp.tool()
+def get_run_detail(run_id: str) -> str:
+    """Get detailed information about a specific run.
+    
+    Args:
+        run_id: The ID of the run to inspect.
+    """
+    r = ls_client.read_run(run_id=run_id)
+    detail = f"""
+Name:    {r.name}
+Type:    {r.run_type}
+Status:  {r.status}
+Start:   {r.start_time}
+End:     {r.end_time}
+
+Inputs:
+{r.inputs}
+
+Outputs:
+{r.outputs}
+
+Error:
+{r.error or "None"}
+"""
+    return detail
+
+@mcp.tool()
+def add_feedback(run_id: str, score: float, comment: str = "") -> str:
+    """Add feedback to a specific run.
+    
+    Args:
+        run_id: The ID of the run to rate.
+        score: Score between 0.0 and 1.0.
+        comment: Optional comment about the run.
+    """
+    ls_client.create_feedback(
+        run_id=run_id,
+        key="user_score",
+        score=score,
+        comment=comment,
+    )
+    return f"Feedback added to run {run_id} - score: {score}"
+
+@mcp.tool()
+def search_runs(
+    project_name: str,
+    filter_string: str = "",
+    limit: int = 10,
+) -> str:
+    """Search runs in a project by filter string.
+    
+    Args:
+        project_name: Name of the project to search in.
+        filter_string: LangSmith filter string e.g. 'eq(status, "error")'.
+        limit: Number of results to return (default 10).
+    """
+    runs = ls_client.list_runs(
+        project_name=project_name,
+        filter=filter_string,
+        limit=limit,
+    )
+    result = []
+    for r in runs:
+        status = "OK" if r.status == "success" else "NOK"
+        result.append(f"{status} [{r.run_type}] {r.name} | id: {r.id}")
+    return "\n".join(result) if result else "No runs matched the filter."
+
+if __name__ == "__main__":
+    mcp.run()
