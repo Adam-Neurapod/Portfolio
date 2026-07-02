@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "version": "gen2-eval-v1",
+    "total_questions": 25,
+    "objective": 22,
+    "qualitative": 3,
+    "note": "CVSS answers use CVSS v3.1 base scores. accept_range allows tolerance for scoring. keywords are lowercased substrings searched in model output.",
+    "categories": {
+      "cvss": 7,
+      "cve_facts": 6,
+      "graph_reasoning": 5,
+      "attack_classification": 4,
+      "reasoning_qualitative": 3
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "cvss",
+      "scoring": "objective",
+      "prompt": "A vulnerability allows a remote, unauthenticated attacker to execute arbitrary code over the network with no user interaction. It fully compromises confidentiality, integrity, and availability, and does not cross a privilege/security boundary (scope unchanged). Give the CVSS v3.1 base score.",
+      "expected_score": 9.8,
+      "accept_range": [9.7, 9.9],
+      "expected_vector": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "explanation": "Classic critical RCE. AV:N, AC:L, PR:N, UI:N, S:U, C:H/I:H/A:H = 9.8"
+    },
+    {
+      "id": 2,
+      "category": "cvss",
+      "scoring": "objective",
+      "prompt": "A local attacker with low privileges exploits a race condition to gain root. Requires local access (AV:L), low attack complexity, low privileges required, no user interaction, scope unchanged, and full impact on confidentiality, integrity and availability. Give the CVSS v3.1 base score. (This models Dirty COW.)",
+      "expected_score": 7.8,
+      "accept_range": [7.7, 7.9],
+      "expected_vector": "AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "explanation": "Dirty COW profile. AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H = 7.8. Note: official Dirty COW is sometimes scored PR:N depending on source; we use PR:L which yields 7.8."
+    },
+    {
+      "id": 3,
+      "category": "cvss",
+      "scoring": "objective",
+      "prompt": "A stored XSS vulnerability requires the attacker to have low privileges (a registered account) and requires a victim to interact (view the page). It is network-exploitable, low complexity, and changes scope (executes in victim's browser context). Confidentiality and integrity impact are low, availability none. Give the CVSS v3.1 base score.",
+      "expected_score": 5.4,
+      "accept_range": [5.3, 5.5],
+      "expected_vector": "AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+      "explanation": "Typical stored XSS. AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N = 5.4"
+    },
+    {
+      "id": 4,
+      "category": "cvss",
+      "scoring": "objective",
+      "prompt": "A denial-of-service vulnerability is network-exploitable, requires no privileges, no user interaction, low complexity, scope unchanged. It only impacts availability (high), with no confidentiality or integrity impact. Give the CVSS v3.1 base score.",
+      "expected_score": 7.5,
+      "accept_range": [7.4, 7.6],
+      "expected_vector": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "explanation": "Network DoS. AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H = 7.5"
+    },
+    {
+      "id": 5,
+      "category": "cvss",
+      "scoring": "objective",
+      "prompt": "An attacker on the same local network (adjacent) exploits a flaw requiring high attack complexity and no privileges, no user interaction, scope unchanged, with high confidentiality impact but no integrity or availability impact. Give the CVSS v3.1 base score.",
+      "expected_score": 5.3,
+      "accept_range": [5.1, 5.5],
+      "expected_vector": "AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "explanation": "AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N = 5.3"
+    },
+    {
+      "id": 6,
+      "category": "cvss",
+      "scoring": "objective",
+      "prompt": "A vulnerability requires physical access to the device (AV:P), low complexity, no privileges, no user interaction, scope unchanged, with high impact on confidentiality, integrity and availability. Give the CVSS v3.1 base score.",
+      "expected_score": 6.8,
+      "accept_range": [6.7, 6.9],
+      "expected_vector": "AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "explanation": "Physical access full impact. AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H = 6.8"
+    },
+    {
+      "id": 7,
+      "category": "cvss",
+      "scoring": "objective",
+      "prompt": "A vulnerability is network-exploitable, low complexity, requires high privileges (admin), no user interaction, scope unchanged, with high confidentiality impact only (no integrity or availability impact). Give the CVSS v3.1 base score.",
+      "expected_score": 4.9,
+      "accept_range": [4.8, 5.0],
+      "expected_vector": "AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+      "explanation": "AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N = 4.9"
+    },
+    {
+      "id": 8,
+      "category": "cve_facts",
+      "scoring": "objective",
+      "prompt": "What is the CVE identifier for the Log4Shell vulnerability, what software library does it affect, and what type of vulnerability is it?",
+      "keywords_required": ["cve-2021-44228", "log4j"],
+      "keywords_bonus": ["remote code execution", "rce", "jndi"],
+      "explanation": "Log4Shell = CVE-2021-44228, affects Apache Log4j, RCE via JNDI lookup."
+    },
+    {
+      "id": 9,
+      "category": "cve_facts",
+      "scoring": "objective",
+      "prompt": "What is the CVE identifier for the Dirty COW vulnerability, what component does it affect, and what class of vulnerability is it?",
+      "keywords_required": ["cve-2016-5195", "linux kernel"],
+      "keywords_bonus": ["privilege escalation", "race condition", "copy-on-write", "copy on write"],
+      "explanation": "Dirty COW = CVE-2016-5195, Linux kernel, local privilege escalation via COW race condition."
+    },
+    {
+      "id": 10,
+      "category": "cve_facts",
+      "scoring": "objective",
+      "prompt": "What is the CVE identifier for Heartbleed, which software does it affect, and what does it allow an attacker to do?",
+      "keywords_required": ["cve-2014-0160", "openssl"],
+      "keywords_bonus": ["memory", "buffer over-read", "heartbeat", "leak"],
+      "explanation": "Heartbleed = CVE-2014-0160, OpenSSL, buffer over-read leaking memory contents."
+    },
+    {
+      "id": 11,
+      "category": "cve_facts",
+      "scoring": "objective",
+      "prompt": "What is the CVE identifier for EternalBlue, what protocol does it exploit, and what famous ransomware used it?",
+      "keywords_required": ["cve-2017-0144", "smb"],
+      "keywords_bonus": ["wannacry", "windows", "notpetya"],
+      "explanation": "EternalBlue = CVE-2017-0144, exploits SMBv1, used by WannaCry ransomware."
+    },
+    {
+      "id": 12,
+      "category": "cve_facts",
+      "scoring": "objective",
+      "prompt": "What is the CVE identifier for Spectre Variant 1 (bounds check bypass), and what hardware feature does it exploit?",
+      "keywords_required": ["cve-2017-5753"],
+      "keywords_bonus": ["speculative execution", "bounds check", "cpu", "side-channel", "side channel"],
+      "explanation": "Spectre Variant 1 = CVE-2017-5753, exploits speculative execution (bounds check bypass)."
+    },
+    {
+      "id": 13,
+      "category": "cve_facts",
+      "scoring": "objective",
+      "prompt": "What is the CVE identifier for Meltdown, and how does it differ fundamentally from Spectre?",
+      "keywords_required": ["cve-2017-5754"],
+      "keywords_bonus": ["rogue data cache", "kernel memory", "speculative", "user-space", "permission"],
+      "explanation": "Meltdown = CVE-2017-5754, rogue data cache load; reads kernel memory from user-space, distinct from Spectre's cross-boundary speculative leak."
+    },
+    {
+      "id": 14,
+      "category": "graph_reasoning",
+      "scoring": "objective",
+      "prompt": "A network has 4 hosts. Host A (public web server) connects to B and C. Host B (app server) connects to A and D. Host C (isolated logging box) connects only to A. Host D (database, holds all customer data) connects only to B. An attacker is on the internet. Describe the shortest attack path to reach the database D, and name the host that is the critical chokepoint on that path.",
+      "keywords_required": ["b"],
+      "answer_note": "Attack path: Internet -> A -> B -> D. B is the chokepoint (only route from the web-facing side to D). Accept if it identifies path A->B->D and names B as chokepoint/pivot.",
+      "manual_check": true
+    },
+    {
+      "id": 15,
+      "category": "graph_reasoning",
+      "scoring": "objective",
+      "prompt": "Five servers with CVSS-scored vulnerabilities: S1=4.2, S2=9.1, S3=7.5, S4=9.8, S5=6.0. S4 is on an isolated network segment unreachable from the internet and has no path to any internet-facing host. S2 is directly internet-facing. Given exposure matters, which server should be patched FIRST and why?",
+      "keywords_required": ["s2"],
+      "answer_note": "S2 should be first: although S4 has the highest raw score (9.8), it is unreachable, so exploitability in practice is near zero. S2 (9.1) is internet-facing and reachable. Correct answer prioritizes S2 due to exposure.",
+      "manual_check": true
+    },
+    {
+      "id": 16,
+      "category": "graph_reasoning",
+      "scoring": "objective",
+      "prompt": "A flat network has 6 workstations all connected to a single central switch, and the switch connects to a domain controller. An attacker compromises one workstation. Explain why the domain controller is the highest-value target and what single architectural change would most reduce lateral movement risk.",
+      "keywords_required": ["domain controller"],
+      "keywords_bonus": ["segmentation", "vlan", "network segmentation", "microsegmentation", "least privilege"],
+      "answer_note": "DC is highest value (compromise = domain-wide control). Best single change: network segmentation / VLANs to limit lateral movement.",
+      "manual_check": true
+    },
+    {
+      "id": 17,
+      "category": "graph_reasoning",
+      "scoring": "objective",
+      "prompt": "Three services: a load balancer (public), an API gateway (behind LB), and a backend microservice (behind gateway, holds secrets). Each hop requires authentication except the load balancer. If an attacker finds an authentication bypass in the API gateway, what is exposed, and is the load balancer or the backend the bigger risk amplifier in this scenario?",
+      "keywords_required": ["backend"],
+      "answer_note": "Auth bypass at gateway exposes the backend microservice (secrets). Backend is the bigger risk amplifier since it holds secrets and the bypass gives direct access. Accept if identifies backend/secrets as the exposure.",
+      "manual_check": true
+    },
+    {
+      "id": 18,
+      "category": "graph_reasoning",
+      "scoring": "objective",
+      "prompt": "A network segments into DMZ (web server), internal zone (file server), and management zone (admin jump box). Firewall rules: DMZ can reach internal on port 443 only; internal can reach management on 22 only; management can reach everything. An attacker compromises the web server in the DMZ. Which zone can they NOT directly reach from the web server, and what would they need to compromise first to get to the management zone?",
+      "keywords_required": ["management"],
+      "answer_note": "From DMZ web server they cannot directly reach management zone. They must first compromise the internal zone (file server), which can reach management on port 22. Accept if identifies management as unreachable directly + internal as the pivot.",
+      "manual_check": true
+    },
+    {
+      "id": 19,
+      "category": "attack_classification",
+      "scoring": "objective",
+      "prompt": "An attacker sends an email appearing to be from the company CEO, urgently asking the finance team to wire funds to a new account. What is this attack technique called, and what MITRE ATT&CK tactic category does it fall under (initial access)?",
+      "keywords_required": ["phishing"],
+      "keywords_bonus": ["spearphishing", "spear phishing", "spear-phishing", "social engineering", "business email compromise", "bec", "initial access"],
+      "explanation": "Spearphishing / BEC. MITRE ATT&CK: Initial Access (Phishing, T1566)."
+    },
+    {
+      "id": 20,
+      "category": "attack_classification",
+      "scoring": "objective",
+      "prompt": "An attacker has compromised one machine and uses stolen credentials to authenticate to other machines on the network, spreading their access. What is this technique category called in MITRE ATT&CK terms?",
+      "keywords_required": ["lateral movement"],
+      "keywords_bonus": ["pass the hash", "pass-the-hash", "credential", "remote services", "t1021"],
+      "explanation": "Lateral Movement (MITRE ATT&CK tactic)."
+    },
+    {
+      "id": 21,
+      "category": "attack_classification",
+      "scoring": "objective",
+      "prompt": "An attacker modifies a legitimate software update on a vendor's build server so that all customers who download the update receive malware. What is this class of attack called?",
+      "keywords_required": ["supply chain"],
+      "keywords_bonus": ["supply-chain", "software supply chain", "solarwinds", "compromise software supply"],
+      "explanation": "Supply chain attack (software supply chain compromise)."
+    },
+    {
+      "id": 22,
+      "category": "attack_classification",
+      "scoring": "objective",
+      "prompt": "An attacker encrypts all files on a victim's systems and demands payment for the decryption key, also threatening to leak stolen data if not paid. Name the attack type and the term for the added leak-threat tactic.",
+      "keywords_required": ["ransomware"],
+      "keywords_bonus": ["double extortion", "double-extortion", "extortion", "exfiltration"],
+      "explanation": "Ransomware with double extortion (encrypt + threaten to leak)."
+    },
+    {
+      "id": 23,
+      "category": "reasoning_qualitative",
+      "scoring": "qualitative",
+      "prompt": "A company has a public web server, an internal database server, a VPN gateway, and an employee laptop with outdated antivirus. Rank these from highest to lowest priority for security hardening, and justify your reasoning based on both exposure and impact.",
+      "rubric": "Strong answer weighs BOTH exposure (internet-facing) AND impact (data value). Reasonable top picks: web server or VPN gateway (both internet-facing, high exposure) or DB (highest impact). Should acknowledge the exposure-vs-impact tradeoff rather than a naive single-axis ranking. Full marks for nuanced justification."
+    },
+    {
+      "id": 24,
+      "category": "reasoning_qualitative",
+      "scoring": "qualitative",
+      "prompt": "Explain the difference between a zero-day exploit and a known CVE, and explain why zero-days are more dangerous from a risk-management perspective. Then explain one reason a known CVE could sometimes be MORE dangerous in practice than a zero-day.",
+      "rubric": "Must correctly define zero-day (no patch/unknown to vendor) vs known CVE (documented, patch usually available). The twist: a known CVE can be more dangerous in practice when orgs fail to patch (mass exploitation of unpatched known CVEs, e.g. EternalBlue/Log4Shell) — attackers have public exploit code and scale. Full marks require engaging with the counterintuitive second part."
+    },
+    {
+      "id": 25,
+      "category": "reasoning_qualitative",
+      "scoring": "qualitative",
+      "prompt": "You are triaging three vulnerabilities under time pressure: (A) CVSS 9.8 RCE on an internal server with no internet path and no sensitive data, (B) CVSS 6.5 auth bypass on the public customer login portal, (C) CVSS 7.2 privilege escalation on the CEO's laptop. You can only patch one today. Which do you choose and what is your reasoning?",
+      "rubric": "No single correct answer, but strong reasoning weighs exposure + business impact + exploitability over raw CVSS. Defensible: B (public-facing, customer data, active exploitation risk) or C (high-value target, CEO access). Weak answer just picks A because it has the highest CVSS without considering it's unreachable. Full marks for multi-factor reasoning."
+    }
+  ]
+}

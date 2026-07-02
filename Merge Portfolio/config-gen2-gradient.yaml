@@ -1,0 +1,26 @@
+slices:
+  - sources:
+      - model: mistralai/Mistral-7B-Instruct-v0.2
+        layer_range: [0, 32]
+      - model: segolilylabs/Lily-Cybersecurity-7B-v0.2
+        layer_range: [0, 32]
+merge_method: slerp
+base_model: mistralai/Mistral-7B-Instruct-v0.2
+parameters:
+  t:
+    # Gradient interpolácie naprieč vrstvami.
+    # Hodnoty = váha smerom k Lily (druhý model). 0 = čistý Mistral, 1 = čistá Lily.
+    #
+    # Logika (z našej vrstvovej analýzy):
+    #   - rané vrstvy (syntax/tokeny): 50/50, oba modely tu podobné
+    #   - stredné vrstvy (fakty, security knowledge): viac Lily (0.75)
+    #   - neskoré vrstvy (reasoning, plánovanie): viac Mistral (0.4)
+    #
+    # Filtre delia parametre na attention (self_attn) a MLP zvlášť,
+    # čo umožňuje jemnejšie ladenie. Zvyšok dostane fallback hodnotu.
+    - filter: self_attn
+      value: [0.5, 0.5, 0.75, 0.75, 0.6, 0.4]
+    - filter: mlp
+      value: [0.5, 0.7, 0.8, 0.8, 0.6, 0.4]
+    - value: 0.5
+dtype: float16

@@ -1,0 +1,11 @@
+slices:
+  - sources:
+      - model: mistralai/Mistral-7B-Instruct-v0.2
+        layer_range: [0, 32]
+      - model: segolilylabs/Lily-Cybersecurity-7B-v0.2
+        layer_range: [0, 32]
+merge_method: slerp
+base_model: mistralai/Mistral-7B-Instruct-v0.2
+parameters:
+  t: 0.6
+dtype: float16
