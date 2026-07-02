@@ -1,8 +1,5 @@
 # Cybersecurity Model Merging — Gen 1 & Gen 2
 
-**Author:** Adam H.
-**Timeframe:** June – July 2026
-**Hardware:** RTX 4060 Laptop (8 GB VRAM), 32 GB RAM, Windows 11
 **Method:** Evolutionary Model Merging (mergekit) — inspired by Sakana AI
 
 ---
